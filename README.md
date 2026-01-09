@@ -139,6 +139,9 @@ git ls-files -z .obsidian | xargs -0 -n 1 git update-index --skip-worktree
 > [!success] Result
 > With this command, each and every user is free to configure their obsidian vault as they please without changes being reflected on the git history.
 
+> [!tip] Bloat Prevention
+> To prevent disk bloat/overload due to all the source files or image assets, add the paths to the `.git/info/exclude` file. 
+
 ---
 
 ## Further Improvements
