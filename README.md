@@ -1,48 +1,53 @@
 # Art Vault 
-
 ## Purpose
 
 The purpose of this repo is to generate SSOT vaults for projects.
 
 In this vault, the following elements will be present:
-- Source Files
-- Exported assets (to the desired project size)
-- Relational table of assets (to check on a quick glance)
-- Information on project asset management: compression rules, naming conventions, TextureImporter presets justification...
+- **Source Files**
+- **Exported assets** (to the desired project size)
+- **Relational table of assets** (to check on a quick glance)
+- **Information on project asset management**: compression rules, naming conventions, TextureImporter presets justification...
 
-Having all in a single project will prevent:
-- Dealing with multiple platforms (GDrive, Slack sharing, Confluence...)
+Having all in a single project will:
+- Prevent scattered content and dealing with multiple platforms (GDrive, Slack sharing, Confluence...)
 - Having everything at reach
 - Being aware at all times of the existing assets inside the game
 - Being aware of how assets should be treated
 
-A template folder structure is going to be provided as an example at master.
+> A template folder structure is going to be provided as an example at master.
 
 ## Requirements
 
-- [Github Account](https://github.com/login)
-- [Obsidian](https://obsidian.md/download)
-- [Git](https://git-scm.com/install/windows)
-- _**(Optional)**_ Git UI of choice. We recommend [Sublime Merge](https://www.sublimemerge.com/)
+Required Tools
+
+> [!checklist] 
+> - [ ] [Github Account](https://github.com/login)
+> - [ ] [Obsidian](https://obsidian.md/download)
+> - [ ] [Git](https://git-scm.com/install/windows)
+> - [ ] _**(Optional)**_ Git UI of choice. We recommend [Sublime Merge](https://www.sublimemerge.com/)
+
+---
 ## Methodology
 ### Project Management
 
 This repo is going to be organised in a specific way:
 
-- MASTER branch is protected and will only have the README file and other instruction files. This branch is protected and won't have any project-related content
-- Each project is going to have its own BRANCH, having the project name as branch name. If any more branching is required, then the `<project-name/<branch-name>` convention will be followed
+- **MASTER branch** is protected and will only have the README file and other instruction files. This branch is protected and won't have any project-related content
+- **Each project** is going to have its own BRANCH, having the project name as branch name. If any more branching is required, then the `<project-name/<branch-name>` convention will be followed
 
-This structure is meant to prevent having unwanted assets or references to other projects; this way, every branch is gonna be a SSOT for a certain project, keeping everything encapsulated.
+> [!abstract] Reasoning
+> This structure is meant to prevent having unwanted assets or references to other projects; this way, every branch is gonna be a SSOT for a certain project, keeping everything encapsulated.
 
 ### Vault Management
 
-A initial `.obsidian` folder with a set base of plugins is provided. The `.obsidian` file is ignored, but is already tracked, so won't ignore changes from the get-go. If any changes to the vault are needed, open a terminal at the folder and run this command first:
+ A initial `.obsidian` folder with a set base of plugins is provided. The `.obsidian` file is ignored, but is already tracked, so won't ignore changes from the get-go. If any changes to the vault are needed, open a terminal at the folder and run this command first:
 
 ```bash
 git ls-files -z .obsidian | xargs -0 -n 1 git update-index --skip-worktree
 ```
 
-> [!info]- Command Explanation:
+> [!info]- Command Explanation
 > ### 1️⃣ `git`
 > 
 > - This is the **Git command-line program** itself.  
@@ -131,11 +136,17 @@ git ls-files -z .obsidian | xargs -0 -n 1 git update-index --skip-worktree
 > - Local changes to these files will no longer show up in `git status` or be staged by default.
 > - Important: this **does not prevent someone from forcing a commit** with `git add -f`, but it covers your usual workflow.
 
- With this command, each and every user is free to configure their obsidian vault as they please without changes being reflected on the git history.
+> [!success] Result
+> With this command, each and every user is free to configure their obsidian vault as they please without changes being reflected on the git history.
+
+---
 
 ## Further Improvements
 
 ### Asset Management
-[Adonis Sigua](https://github.com/adsiguatripledot) sugested that, since this is going to act as a SSOT for art in projects, that we can generate some kind of asset management tool parting from here; maybe generating a github action that on push updates some assets in a bucket or in a package that the project reads so assets are auto-updated.
 
-This can collide with quickly adding assets to the project locally, so will potentially generate a drawback in speed for prototypes, but it's a nice way to keep projects tidy, clean and with asset awareness.
+> [!quote] Suggestion by [Adonis Sigua](https://github.com/adsiguatripledot)
+> Since this is going to act as a SSOT for art in projects, that we can generate some kind of asset management tool parting from here; maybe generating a github action that on push updates some assets in a bucket or in a package that the project reads so assets are auto-updated.
+
+> [!warning] Trade-off Consideration
+> This can collide with quickly adding assets to the project locally, so will potentially generate a drawback in speed for prototypes, but it's a nice way to keep projects tidy, clean and with asset awareness.
