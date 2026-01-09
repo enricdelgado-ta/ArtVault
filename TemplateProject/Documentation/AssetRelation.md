@@ -1,11 +1,13 @@
 # Relational Asset Table
 
-> [!tip] _*Add here Information about your assets*_
+> [!info] Asset Information
 > 
-> This document is meant to be the SSOT for textures: a single giant document with all the assets. Feel free to generate smaller documents to gather textures used by a screen or feature.
+> This document is meant to be the SSOT for textures: a single giant document with all the assets. This serves as the primary reference for reskinning purposes. Screen-specific briefing documents can be found in [Asset Briefings](../Asset%20Briefings/).
 
-| Asset                           | Name             | Size |
-| ------------------------------- | ---------------- | ---- |
-| ![[TEX_Icon_Gear.png \| 75]]    | TEX_Icon_Gear    |      |
-| ![[TEX_Icon_Haptics.png \| 75]] | TEX_Icon_Haptics |      |
-| ![[TEX_Icon_Hand.png \| 75]]    | TEX_Icon_Hand    |      |
+---
+
+| Asset                           | Name             | Size      | Used In |
+| :------------------------------ | :--------------- | :-------- | :------ |
+| ![[TEX_Icon_Gear.png \| 75]]    | `TEX_Icon_Gear`    | 152x154   |         |
+| ![[TEX_Icon_Haptics.png \| 75]] | `TEX_Icon_Haptics` | 299x234   |         |
+| ![[TEX_Icon_Hand.png \| 75]]    | `TEX_Icon_Hand`    | 802x546   |         |
