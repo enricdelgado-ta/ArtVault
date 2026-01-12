@@ -10,8 +10,10 @@
 
 This vault contains comprehensive documentation for managing Unity project assets. Each document covers specific aspects of asset management, import settings, and project organization.
 
-The documentation is organized into two main categories:
+The documentation is organized into four main categories:
 - **Asset Conventions** - Naming conventions and import settings for different asset types
+- **Asset Briefings** - Detailed specifications and requirements for asset creation
+- **Asset Relations** - Registry and tracking of all project assets
 - **Project Setup** - Project structure, platform settings, and pipeline configuration
 
 ---
@@ -54,17 +56,29 @@ Art/
 Documentation/
 ├── Asset Conventions/        # Asset type conventions
 │   ├── AnimationConvention.md
-│   ├── AssetConvention.md
-│   ├── AudioConvention.md
-│   ├── MaterialConvention.md
-│   └── ModelConvention.md
+│   └── AssetConvention.md
+├── Asset Briefings/          # Asset creation specifications
+│   └── UI/
+│       └── BriefingTemplate.md
+├── AssetRelation/            # Asset registry files
+│   ├── BannerRelation.md
+│   ├── ButtonRelation.md
+│   ├── CardRelation.md
+│   ├── DailyChallengeRelation.md
+│   ├── IconRelation.md
+│   ├── LabelRelation.md
+│   ├── PatternRelation.md
+│   ├── PopupRelation.md
+│   ├── SlotRelation.md
+│   ├── ToggleRelation.md
+│   └── TransitionScreenRelation.md
 ├── Project Setup/            # Project configuration
 │   ├── ImportPipeline.md
 │   ├── PlatformSettings.md
 │   ├── PrefabOrganization.md
 │   ├── UnityFolderStructure.md
 │   └── UnityProjectSettings.md
-├── AssetRelation.md          # Asset registry
+├── AssetRelation.md          # Main asset registry index
 └── DocumentationIndex.md     # This file
 ```
 
@@ -82,30 +96,47 @@ These documents define naming conventions and import settings for different asse
 - Texture import presets
 - Platform-specific texture settings
 
-#### [Material Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/MaterialConvention.md)
-- Material naming conventions
-- Shader selection guidelines
-- Material property standards
-- Shader variant management
-
-#### [Model Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/ModelConvention.md)
-- 3D model naming conventions
-- Model import settings
-- Animation import settings
-- LOD (Level of Detail) configuration
-- Mesh compression settings
-
-#### [Audio Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/AudioConvention.md)
-- Audio naming conventions
-- Compression formats per platform
-- 3D vs 2D audio settings
-- Audio mixer organization
-
 #### [Animation Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/AnimationConvention.md)
 - Animation naming conventions
 - Import settings for different rig types
 - Compression settings
 - Animation event standards
+
+---
+
+### Asset Briefings
+
+These documents provide detailed specifications and requirements for creating specific asset types.
+
+#### [UI Briefing Template](Puzzle%20Solitaire/Documentation/Asset%20Briefings/UI/BriefingTemplate.md)
+- Template for UI asset briefings
+- Asset creation guidelines
+- Specification standards
+
+---
+
+### Asset Relations
+
+These documents track and register all project assets by category.
+
+#### [Main Asset Relation Table](Puzzle%20Solitaire/Documentation/AssetRelation.md)
+- Central registry index for all assets
+- Quick reference for asset lookup
+- Asset usage tracking
+
+#### Individual Asset Relation Files
+
+- [Banner Relation](Puzzle%20Solitaire/Documentation/AssetRelation/BannerRelation.md) - Banner asset registry
+- [Button Relation](Puzzle%20Solitaire/Documentation/AssetRelation/ButtonRelation.md) - Button asset registry
+- [Card Relation](Puzzle%20Solitaire/Documentation/AssetRelation/CardRelation.md) - Card asset registry
+- [Daily Challenge Relation](Puzzle%20Solitaire/Documentation/AssetRelation/DailyChallengeRelation.md) - Daily challenge asset registry
+- [Icon Relation](Puzzle%20Solitaire/Documentation/AssetRelation/IconRelation.md) - Icon asset registry
+- [Label Relation](Puzzle%20Solitaire/Documentation/AssetRelation/LabelRelation.md) - Label asset registry
+- [Pattern Relation](Puzzle%20Solitaire/Documentation/AssetRelation/PatternRelation.md) - Pattern asset registry
+- [Popup Relation](Puzzle%20Solitaire/Documentation/AssetRelation/PopupRelation.md) - Popup asset registry
+- [Slot Relation](Puzzle%20Solitaire/Documentation/AssetRelation/SlotRelation.md) - Slot asset registry
+- [Toggle Relation](Puzzle%20Solitaire/Documentation/AssetRelation/ToggleRelation.md) - Toggle asset registry
+- [Transition Screen Relation](Puzzle%20Solitaire/Documentation/AssetRelation/TransitionScreenRelation.md) - Transition screen asset registry
 
 ---
 
@@ -145,15 +176,6 @@ These documents cover project structure, organization, and configuration.
 
 ---
 
-### Core Asset Documentation
-
-#### [Asset Relation Table](Puzzle%20Solitaire/Documentation/AssetRelation.md)
-- Central registry of all textures
-- Quick reference for asset lookup
-- Asset usage tracking
-
----
-
 ## 🔍 Quick Reference
 
 ### Finding Information
@@ -161,16 +183,18 @@ These documents cover project structure, organization, and configuration.
 | What You Need | Document | Location |
 | :------------ | :------- | :-------- |
 | **Texture settings** | [Asset Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/AssetConvention.md) | Asset Conventions |
-| **Material setup** | [Material Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/MaterialConvention.md) | Asset Conventions |
-| **3D model import** | [Model Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/ModelConvention.md) | Asset Conventions |
-| **Audio compression** | [Audio Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/AudioConvention.md) | Asset Conventions |
 | **Animation setup** | [Animation Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/AnimationConvention.md) | Asset Conventions |
+| **UI asset briefing** | [UI Briefing Template](Puzzle%20Solitaire/Documentation/Asset%20Briefings/UI/BriefingTemplate.md) | Asset Briefings |
+| **Asset lookup** | [Asset Relation Table](Puzzle%20Solitaire/Documentation/AssetRelation.md) | Root |
+| **Banner assets** | [Banner Relation](Puzzle%20Solitaire/Documentation/AssetRelation/BannerRelation.md) | AssetRelation |
+| **Button assets** | [Button Relation](Puzzle%20Solitaire/Documentation/AssetRelation/ButtonRelation.md) | AssetRelation |
+| **Card assets** | [Card Relation](Puzzle%20Solitaire/Documentation/AssetRelation/CardRelation.md) | AssetRelation |
+| **Icon assets** | [Icon Relation](Puzzle%20Solitaire/Documentation/AssetRelation/IconRelation.md) | AssetRelation |
 | **Prefab organization** | [Prefab Organization](Puzzle%20Solitaire/Documentation/Project%20Setup/PrefabOrganization.md) | Project Setup |
 | **Folder structure** | [Unity Folder Structure](Puzzle%20Solitaire/Documentation/Project%20Setup/UnityFolderStructure.md) | Project Setup |
 | **Platform settings** | [Platform Settings](Puzzle%20Solitaire/Documentation/Project%20Setup/PlatformSettings.md) | Project Setup |
 | **Import automation** | [Import Pipeline](Puzzle%20Solitaire/Documentation/Project%20Setup/ImportPipeline.md) | Project Setup |
 | **Project configuration** | [Unity Project Settings](Puzzle%20Solitaire/Documentation/Project%20Setup/UnityProjectSettings.md) | Project Setup |
-| **Asset lookup** | [Asset Relation Table](Puzzle%20Solitaire/Documentation/AssetRelation.md) | Root |
 
 ---
 
@@ -179,11 +203,20 @@ These documents cover project structure, organization, and configuration.
 | Document | Status | Location |
 | :------- | :----- | :------- |
 | Asset Convention | ✅ Template | Asset Conventions |
-| Asset Relation Table | ✅ Template | Root |
-| Material Convention | ✅ Template | Asset Conventions |
-| Model Convention | ✅ Template | Asset Conventions |
-| Audio Convention | ✅ Template | Asset Conventions |
 | Animation Convention | ✅ Template | Asset Conventions |
+| UI Briefing Template | ✅ Template | Asset Briefings |
+| Asset Relation Table | ✅ Template | Root |
+| Banner Relation | ✅ Template | AssetRelation |
+| Button Relation | ✅ Template | AssetRelation |
+| Card Relation | ✅ Template | AssetRelation |
+| Daily Challenge Relation | ✅ Template | AssetRelation |
+| Icon Relation | ✅ Template | AssetRelation |
+| Label Relation | ✅ Template | AssetRelation |
+| Pattern Relation | ✅ Template | AssetRelation |
+| Popup Relation | ✅ Template | AssetRelation |
+| Slot Relation | ✅ Template | AssetRelation |
+| Toggle Relation | ✅ Template | AssetRelation |
+| Transition Screen Relation | ✅ Template | AssetRelation |
 | Prefab Organization | ✅ Template | Project Setup |
 | Unity Folder Structure | ✅ Template | Project Setup |
 | Platform Settings | ✅ Template | Project Setup |

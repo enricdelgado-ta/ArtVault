@@ -1,4 +1,4 @@
-# Asset Convention
+# Texture Convention
 
 > [!info] Asset Information Document
 >
