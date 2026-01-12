@@ -108,7 +108,7 @@ These documents define naming conventions and import settings for different asse
 
 These documents provide detailed specifications and requirements for creating specific asset types.
 
-#### [UI Briefing Template](Puzzle%20Solitaire/Documentation/Asset%20Briefings/UI/BriefingTemplate.md)
+#### [UI Briefing Template](_BriefingTemplate.md)
 - Template for UI asset briefings
 - Asset creation guidelines
 - Specification standards
@@ -184,7 +184,7 @@ These documents cover project structure, organization, and configuration.
 | :------------ | :------- | :-------- |
 | **Texture settings** | [Asset Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/AssetConvention.md) | Asset Conventions |
 | **Animation setup** | [Animation Convention](Puzzle%20Solitaire/Documentation/Asset%20Conventions/AnimationConvention.md) | Asset Conventions |
-| **UI asset briefing** | [UI Briefing Template](Puzzle%20Solitaire/Documentation/Asset%20Briefings/UI/BriefingTemplate.md) | Asset Briefings |
+| **UI asset briefing** | [UI Briefing Template](_BriefingTemplate.md) | Asset Briefings |
 | **Asset lookup** | [Asset Relation Table](Puzzle%20Solitaire/Documentation/AssetRelation.md) | Root |
 | **Banner assets** | [Banner Relation](Puzzle%20Solitaire/Documentation/AssetRelation/BannerRelation.md) | AssetRelation |
 | **Button assets** | [Button Relation](Puzzle%20Solitaire/Documentation/AssetRelation/ButtonRelation.md) | AssetRelation |
