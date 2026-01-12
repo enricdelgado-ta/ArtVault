@@ -142,6 +142,24 @@ git ls-files -z .obsidian | xargs -0 -n 1 git update-index --skip-worktree
 > [!tip] Bloat Prevention
 > To prevent disk bloat/overload due to all the source files or image assets, add the paths to the `.git/info/exclude` file. 
 
+### Source Files Management
+
+There is a `.gitignore` entrance for a folder named `Soruce Files`.
+
+The reason behind it is to support the case where you want to keep everything - project source files, images, briefings... - tight in one folder. To do so:
+
+1. Generate a `Source Files` folder in the root of the project folder
+2. Make that folder your local's GDrive Source File - for that, you'll need **Desktop GDrive**
+
+Then, the project structure will look something like this:
+
+```
+Project Root (E.g.: Puzzle Solitaire)
+├── Art/                    # Textures and Mockups
+├── Documentation/          # Project Documentation
+└── Source Files/           # Your GDrive Source Files
+```
+
 ---
 
 ## Further Improvements
